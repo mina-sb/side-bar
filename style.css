@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root {
+    --text-color: #292929;
+    --bg-color: #f8f7f7;
+    --bg-color-2: #fff;
+    --main-color: #8f44fd;
+}
+
+body {
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.sidebar {
+    background-color: var(--bg-color-2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 100vh;
+    box-shadow: rgba(22, 23, 26, 0.1) 0 10px 30px -10px;
+    padding: 2rem 2rem;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.tabs {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tabs li {
+    font-size: 1.3em;
+    margin: 0rem 1px;
+    flex: 1 1 32%;
+    text-align: center;
+}
+
+.tabs li i {
+    cursor: pointer;
+    opacity: 0.5;
+    color: var(--text-color);
+    transition: all ease 1s;
+}
+
+.tabs li i.active {
+    opacity: 1;
+}
+
+.hr {
+    border-top: 1px solid var(--text-color);
+    margin-top: 1rem;
+    opacity: 0.5;
+
+}
+
+.underline {
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    width: 32%;
+    height: 3px;
+    z-index: 1000;
+    margin-top: -2px;
+    transition: all ease 1s;
+}
+
+.tab-containers {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 179px 178px 178px;
+    transition: all ease 1s;
+    gap: 21px
+}
+
+
+.tab-1 ul {
+    list-style: none;
+    margin-top: 1rem;
+
+}
+
+.tab-1 ul li div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    opacity: .8;
+
+}
+
+.tab-1 ul li div i {
+    font-size: 1.1rem;
+}
+
+.tab-1 ul li div a {
+    font-size: .8rem;
+    margin-left: 1.2rem;
+    font-weight: 300;
+}
+
+.tab-2 div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.4rem 0.5rem;
+    color: var(--text-color);
+    opacity: .8;
+    border: 2px solid rgba(29, 29, 29, 0.2);
+    border-radius: 4px;
+    margin-top: .8rem;
+    width: 99%;
+}
+
+.tab-2 div i {
+    border: none;
+    outline: none;
+    padding: 0 .5rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    opacity: .8;
+}
+
+.tab-2 div input {
+    border: none;
+    max-width: 90%;
+    outline: none;
+    padding: 0 .5rem;
+    max-width: 80%;
+
+}
+
+.tab-2 div input::placeholder {
+    color: var(--text-color);
+    opacity: 1;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.tab-3 div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    font-size: .8rem;
+    font-weight: 300;
+    margin-top: .8rem;
+}
